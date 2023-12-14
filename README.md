@@ -13,7 +13,7 @@ _minHash_: Function to perform the minhashing-step of the LSH algorithm. Constru
 
 _candidateBands_: Function to perform the banding-step of the LSH algorithm. The signature matrix is split into the specified rows and bands, and candidates are extracted based on similar signatures in these bands.
 
-_distanceMatrix_: Function to calculate the Jaccard- and Cosine-distance measures. Here the preselection criteria are used. The preselection criteria are added manually, so when you want to run the algorithm for only the shop and brand criteria, remove the 'inches'-criterion from the if-statement in row 204.
+_distanceMatrix_: Function to calculate the Jaccard- and Cosine-distance measures. Here the preselection criteria are used. The preselection criteria are added manually, so when you want to run the algorithm for only the shop and brand criteria, remove the 'inches[i]==inches[j]'-criterion from the if-statement in row 204.
 
 _clusterPairing_: Function to perform the Agglomerative hierarchical clustering algorithm, based on the calculated distance matrices, with a specified distance threshold. Next to this, this function also extracts the predicted pairs from the clustering algorithm, as well as the real pairs from the modelID's obtained from the dataset.
 
