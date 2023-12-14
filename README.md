@@ -2,7 +2,8 @@
 This GitHub directory contains the code to the algorithm that was used while making the individual assignment for the course Computer Science for Business Analytics. 
 As a result the following paper was written: "Increasing the Efficiency of MSMP: Preselection Criteria Revised". 
 
-The paper discusses the reasoning behind the methods used in the code.
+The code contains the implementation of a scalable duplicate detection algorithm, using Locality Sensitive Hashing (LSH) and Agglomerative clustering.
+The dataset used for this research contains product descriptions of 1624 TV's across four different webshops. The product descriptions contain information on the webshop, title of the product, the modelID and a set of key-value pairs. The modelID's are only used for evaluation of the algorithm.
 To keep the code as clean as possible, a description of each notable function in the code will be provided in this README.
 
 The code itself works sequentially, so each function requires input obtained through previous functions. If the code is not ran in the given order, errors can occur.
